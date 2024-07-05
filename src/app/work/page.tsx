@@ -28,10 +28,10 @@ const page = () => {
   ]
   return (
     <AppLayout>
-      <div className=" pt-10 flex flex-col gap-10">
+      <div className=" pt-10 flex flex-col gap-10" k>
      {
       work.map((item,index)=>{
-        return ( <div className="hover:border-l-4 border-l-primary2 hover:pl-2 duration-300 ">
+        return ( <div key={index} className="hover:border-l-4 border-l-primary2 hover:pl-2 duration-300 ">
       
         
           <LinkPreview
