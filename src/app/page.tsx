@@ -1,94 +1,106 @@
+"use client"
+
 import Link from "next/link";
 import Image from "next/image";
 import frimps from "../assets/images/frimps.jpg";
 import AppLayout from "@/components/layouts/layout.main";
+import { LinkPreview } from "@/components/layouts/link-preview";
 export default function Home() {
+  const email = "gyekyeyaw3@gmail.com"
+  const handleEmailClick = () => {
+    window.location.href = `mailto:${email}`;
+  };
+
   return (
     <AppLayout>
-      <div className="my-6 flex flex-col lg:flex-row lg:gap-10 lg:my-8">
-        <Image
-          src={frimps}
-          alt={"frimps"}
-          className="w-[130px] lg:w-[150px] aspect-auto cursor-pointer"
-        />
+      <div className="my-6 flex flex-col  lg:gap-10 lg:my-8">
+<div className=" w-full flex flex-col gap-1">
+<p className=" text-xl font-semibold">Papa Yaw Agyeman-Gyekye</p>
+        <p className=" text-gray-800 text-sm">
+          Software Engineer &#8226; JavaScript &#8226; TypeScript{" "}
+        </p>
+        <p className=" text-gray-900 text-sm">Accra , Ghana</p>
+</div>
         <div className="mt-4 font-light flex flex-col gap-2 text-[0.89rem]  lg:text-[1rem]">
           <p>
-            hi, i'm an engineer, <br /> currently based in Ghana 🇬🇭.{" "}
+            I am a final year Computer Engineering student at{" "}
+            <Link className=" underline" href={"https://www.knust.edu.gh/"}>
+              KNUST
+            </Link>
+          </p>
+          <p>I am a software engineer</p>
+          <p>
+            I'm mostly interested in building web and mobile applications with typescript, and
+            also enjoy python.
           </p>
           <p>
-            i'm mostly interested in anything typescript (web & mobile), and
-            also java.
-          </p>
-          <p>
-            i also like space explorations, computers, maybe current affairs and
-            cool stuff.
+            I also like video games, computers, and movies
           </p>
           <p>
             <a
-              href="https://github.com/frimpsss"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-900"
+              href="https://github.com/PYAG1"
+             
+              className="text-orange"
             >
-              github
+        github
             </a>{" "}
             /{" "}
             <a
-              href="https://twitter.com/frimpssssss"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-900"
+              href="https://x.com/pyaggg0"
+      
+              className="text-orange"
             >
-              X (twitter)
-            </a>{" "}
-            /{" "}
-            <a
-              href="https://www.linkedin.com/in/akwasi-ampomah-frimpong-760bb0206/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-900"
+    twitter
+            </a>      /{" "}
+            <button
+                onClick={handleEmailClick}
+      
+              className="text-orange"
             >
-              linkedin
-            </a>
+mail
+            </button>
           </p>
         </div>
       </div>
 
       <div>
-        <h4 className=" text-[1.2rem] mb-2 text-primary-900 cursor-pointer border-b-primary-100 border-b-[1px] pb-2">
+        <h4 className=" text-[1.2rem] mb-2  cursor-pointer border-b-primary-100 border-b-[1px] pb-2">
           featured work
         </h4>
         <ul className="lg:list-disc lg:mt-4 mt:2 flex flex-col lg:gap-4 gap-2">
           <li>
-            <div className="hover:border-l-4 border-l-primary-950 hover:pl-2 duration-300 ">
-              <a
-                target="__blank"
-                href="https://www.dimba.app/"
-                className="text-primary-950 text-[1.1rem]"
+            <div className="hover:border-l-4 border-l-primary2 hover:pl-2 duration-300 ">
+              <LinkPreview
+                url="https://www.dimba.app/about"
+                className=" text-[1.1rem]"
               >
                 Dimba.com
-              </a>
+              </LinkPreview>{" "}
               <p className="font-light text-[0.89rem]">
                 An event discovery and ticketing application.
               </p>
             </div>
           </li>
           <li>
-            <div className="hover:border-l-4 border-l-primary-950 hover:pl-2 duration-300 ">
-              <a
-                target="__blank"
-                href="https://flow-your-mind.vercel.app/"
-                className="text-primary-950 text-[1.1rem]"
+            <div className="hover:border-l-4 border-l-primary2 hover:pl-2 duration-300 ">
+              <LinkPreview
+                url="https://www.zomujofoundation.org/"
+                className=" text-[1.1rem]"
               >
-                Flow your mind
-              </a>
+                Zomujo Foundation
+
+              </LinkPreview>
               <p className="font-light text-[0.89rem]">
-                Send and recieve anounymous messages.
+              The officiak website of Zomujo org,a mental health organization
               </p>
             </div>
           </li>
         </ul>
+        <Link href={"/work"} className=" mt-6 underline text-sm">
+          View More
+        </Link>
       </div>
+      
     </AppLayout>
   );
 }

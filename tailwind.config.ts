@@ -47,6 +47,8 @@ const config: Config = {
         "900": "#10279f",
         "950": "#0a155c",
       },
+      primary2: "#05B1B9",
+      orange: "#EC8433",
     },
     extend: {
       backgroundImage: {
