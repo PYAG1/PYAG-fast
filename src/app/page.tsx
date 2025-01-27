@@ -36,7 +36,7 @@ export default function Home() {
     Outside of coding, I enjoy playing video games, geeking out over computers, and relaxing with a good movie.
   </p>
 
-  <p>I am an Associate Software Analyst at <Link className=" text-orange underline  font-semibold" href={"https://www.rancard.com/"}>Rancard Solutions</Link></p>
+  <p>I am currently working as an Associate Software Analyst at <Link className=" text-orange underline  font-semibold" href={"https://www.rancard.com/"}>Rancard Solutions</Link></p>
           <p>
             <a
               href="https://github.com/PYAG1"
@@ -92,7 +92,7 @@ Email me
 
               </LinkPreview>
               <p className="font-light text-[0.89rem]">
-              The officiak website of Zomujo org,a mental health organization
+              The official website of Zomujo org,a mental health organization
               </p>
             </div>
           </li>
