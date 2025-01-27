@@ -15,7 +15,7 @@ export default function Home() {
     <AppLayout>
       <div className="my-6 flex flex-col  lg:gap-10 lg:my-8">
 <div className=" w-full flex flex-col gap-1">
-<p className=" text-xl font-semibold">Papa Yaw Agyeman-Gyekye</p>
+<p className=" text-xl font-semibold">Papa Yaw</p>
         <p className=" text-gray-800 text-sm">
           Software Engineer &#8226; JavaScript &#8226; TypeScript{" "}
         </p>
