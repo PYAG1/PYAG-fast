@@ -20,12 +20,7 @@ export default function Home() {
         <p className=" text-gray-900 text-sm">Accra , Ghana</p>
 </div>
         <div className="mt-4 font-light flex flex-col gap-2 text-[0.89rem]  lg:text-[1rem]">
-          <p>
-            I am a final year Computer Engineering student at{" "}
-            <Link className=" underline" href={"https://www.knust.edu.gh/"}>
-              KNUST
-            </Link>
-          </p>
+
           <p>
     I'm a passionate software engineer with experience in building user-friendly websites, web apps, and mobile applications using React, Next.js, and React Native, all powered by TypeScript.
   </p>
