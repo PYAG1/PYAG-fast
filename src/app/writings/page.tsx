@@ -1,7 +1,6 @@
 import AppLayout from "@/components/layouts/layout.main";
 import { getBlogs } from "@/util/fetch-mdx";
 import Link from "next/link";
-import React from "react";
 
 const page = async () => {
   const blogs = await getBlogs();
