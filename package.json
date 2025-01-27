@@ -15,15 +15,19 @@
     "@next/mdx": "^14.2.1",
     "@radix-ui/react-hover-card": "^1.1.1",
     "@types/mdx": "^2.0.13",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.13",
+    "lucide-react": "^0.474.0",
+    "motion": "^12.0.5",
     "next": "13.5.5",
     "next-mdx-remote": "^4.4.1",
     "qss": "^3.0.0",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
-    "tailwind-merge": "^2.3.0"
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",

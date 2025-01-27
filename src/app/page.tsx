@@ -1,5 +1,6 @@
 "use client"
 
+import VerticalCutReveal from "@/components/fancy/vertical-cut-reveal";
 import AppLayout from "@/components/layouts/layout.main";
 import { LinkPreview } from "@/components/layouts/link-preview";
 import Link from "next/link";
@@ -13,7 +14,33 @@ export default function Home() {
     <AppLayout>
       <div className="my-6 flex flex-col  lg:gap-10 lg:my-8">
 <div className=" w-full flex flex-col gap-1">
-<p className=" text-xl font-semibold">Papa Yaw</p>
+
+<VerticalCutReveal
+        splitBy="characters"
+        staggerDuration={0.025}
+        staggerFrom="first"
+        transition={{
+          type: "spring",
+          stiffness: 200,
+          damping: 21,
+        }}
+      >
+        {`HI 👋, FRIEND!`}
+      </VerticalCutReveal>
+      <VerticalCutReveal
+        splitBy="characters"
+        staggerDuration={0.025}
+        staggerFrom="last"
+        reverse={true}
+        transition={{
+          type: "spring",
+          stiffness: 200,
+          damping: 21,
+          delay: 0.5,
+        }}
+      >
+        {`I'm Papa Yaw`}
+      </VerticalCutReveal>
         <p className=" text-gray-800 text-sm">
           Software Engineer &#8226; JavaScript &#8226; TypeScript{" "}
         </p>
@@ -26,14 +53,16 @@ export default function Home() {
               KNUST
             </Link>
           </p>
-          <p>I am a software engineer</p>
           <p>
-            I'm mostly interested in building web and mobile applications with typescript, and
-            also enjoy python.
-          </p>
-          <p>
-            I also like video games, computers, and movies
-          </p>
+    I'm a passionate software engineer with experience in building user-friendly websites, web apps, and mobile applications using React, Next.js, and React Native, all powered by TypeScript.
+  </p>
+  <p>
+    My interests include building scalable and maintainable software solutions, exploring the capabilities of Python, and enhancing user experience through innovative designs.
+  </p>
+  <p>
+    Outside of coding, I enjoy playing video games, geeking out over computers, and relaxing with a good movie.
+  </p>
+
           <p>
             <a
               href="https://github.com/PYAG1"
@@ -53,9 +82,9 @@ export default function Home() {
             <button
                 onClick={handleEmailClick}
       
-              className="text-orange"
+              className="text-orange underline"
             >
-mail
+Email me
             </button>
           </p>
         </div>
