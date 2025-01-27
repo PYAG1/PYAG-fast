@@ -1,10 +1,8 @@
 "use client"
 
-import Link from "next/link";
-import Image from "next/image";
-import frimps from "../assets/images/frimps.jpg";
 import AppLayout from "@/components/layouts/layout.main";
 import { LinkPreview } from "@/components/layouts/link-preview";
+import Link from "next/link";
 export default function Home() {
   const email = "gyekyeyaw3@gmail.com"
   const handleEmailClick = () => {
@@ -71,10 +69,10 @@ mail
           <li>
             <div className="hover:border-l-4 border-l-primary2 hover:pl-2 duration-300 ">
               <LinkPreview
-                url="https://www.dimba.app/about"
+                url="https://organizer.dimba.app/"
                 className=" text-[1.1rem]"
               >
-                Dimba.com
+                Dimba Events Organizer Dashboard
               </LinkPreview>{" "}
               <p className="font-light text-[0.89rem]">
                 An event discovery and ticketing application.
