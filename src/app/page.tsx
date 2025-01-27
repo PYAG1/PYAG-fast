@@ -85,7 +85,7 @@ Email me
           <li>
             <div className="hover:border-l-4 border-l-primary2 hover:pl-2 duration-300 ">
               <LinkPreview
-                url="https://www.zomujofoundation.org/"
+                url="https://zomujo.org/"
                 className=" text-[1.1rem]"
               >
                 Zomujo Foundation
