@@ -5,7 +5,12 @@ import React from "react";
 
 const page = () => {
   const work = [
-
+{
+  name:'Halfer Pay',
+  url:"https://www.halferpay.com/",
+  about:"Halfer Pay is an ecommerce serve  that allows users to buy and pay for goods in installment. Built for a client, frontend in react and backend in Rust. Collaborated with",
+  collaborators:[{name:"Kwaame Ofori-Adjekum" , url:"https://github.com/qwamicodes"}]
+},
     {
       name: "Dimba Event Organizer App",
       url: "https://organizer.dimba.app/",
@@ -40,12 +45,6 @@ const page = () => {
       url: "https://zomujo.org/",
       about: "The official website of Zomujo org, a mental health organization. Collaborated with",
       collaborators: [  { name: "Nana Kwesi Asante", url: "https://www.nkasante.com/" }]
-    },
-    {
-      name: "Mascot Bites",
-      url: "https://food-app-pyag1.vercel.app/",
-      about: "A simple food application with cart functionality and viewing order history",
-      collaborators: []
     },
     {
       name: "HR App",
